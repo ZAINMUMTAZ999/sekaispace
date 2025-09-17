@@ -74,8 +74,8 @@ export type addReviewTypes = {
 
 
 
-// const Base_Url_API = "https://68c7e64c087a56605627be96--lively-boba-e2000d.netlify.app/api";
-const Base_Url_API = "http://localhost:8000";
+const Base_Url_API = "https://68cae40d2013f615b4aad1fb--lively-boba-e2000d.netlify.app/api";
+// const Base_Url_API = "http://localhost:8000";
 
 const registerApi = async (formDatajson: registerUserTypes) => {
   const response = await fetch(`${Base_Url_API}/v1/register`, {
@@ -201,20 +201,7 @@ const getContactUsApi = async (): Promise<contactUsResponse[]> => {
     throw new Error("Something Went Wrong!");
   }
 };
-export const getApi = async (): Promise<contactUsResponse[]> => {
-  try {
-    const response = await fetch("https://68c7da34c8e8300d6260a39d--lively-boba-e2000d.netlify.app/api/data", {
-      credentials: "include",
-    });
-    if (!response.ok) {
-      throw new Error("blogApi not fetched");
-    }
-    return response.json();
-  } catch (error) {
-    console.log(error);
-    throw new Error("Something Went Wrong!");
-  }
-};
+
 const allBlogsApi = async (): Promise<addBlogTypes[]> => {
   try {
     const response = await fetch(`${Base_Url_API}/v2/blogs`, {
@@ -242,7 +229,7 @@ const searchPage = async (searchParams: { page: string; }
   queryParams.append("page", searchParams.page || "");
   try {
     const repsonse = await fetch(
-      `http://localhost:8000/v2/search?${queryParams}`,
+      `${Base_Url_API}/v2/search?${queryParams}`,
       // "http://localhost:8000/v2/blogs",
       {
         method: "GET",
