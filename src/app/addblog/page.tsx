@@ -1,20 +1,22 @@
 "use client";
-// /* eslint-disable react-hooks/rules-of-hooks */
+
+import dynamic from "next/dynamic";
+// import TextEditor from "../components/text-editor";  
+const TextEditor = dynamic(() => import("../components/text-editor"), {
+  ssr: false,
+});
+// export const dynamic = "force-dynamic";
+
 import { addBlogApi } from "../Api";
 import { AppContext } from "../context/AppNotify";
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
-// import { useNavigate } from "react-router-dom";
 
-// import { addBlogTypes } from "../../../backend/src/models/addBlog.models";
 import {addBlogTypes} from "../Api";
-// import { Button } from "./ui/button";
-
-import TextEditor from "../components/text-editor";
 import { ImagePlus, Type, FileText, Info, Send } from "lucide-react";
 import { Button } from "../components/ui/button";
-// import { useRouter } from "next/router";
+
 import Image from "next/image";
 
 // Blog Form Skeleton Loading Component
@@ -48,24 +50,7 @@ const BlogFormSkeleton = () => {
 
 export default function AddBlog () {
   const { showToast } = AppContext();
-  //  const { isAdmin } = useAuth();
-  //   if (!isLogged) {
-  //   return (
-  //     <div className="max-w-4xl mx-auto p-4 md:p-6 text-center">
-  //       <h1 className="text-2xl font-bold text-gray-800 mb-4">Access Denied</h1>
-  //       <p className="text-gray-600">Please log in to access this page.</p>
-  //     </div>
-  //   );
-  // }
 
-  // if (!isAdmin) {
-  //   return (
-  //     <div className="max-w-4xl mx-auto p-4 md:p-6 text-center">
-  //       <h1 className="text-2xl font-bold text-gray-800 mb-4">Admin Access Required</h1>
-  //       <p className="text-gray-600">Only administrators can create blog posts.</p>
-  //     </div>
-  //   );
-  // }
 
   const [loadingInitial, setLoadingInitial] = useState(true);
   const {
@@ -76,7 +61,7 @@ export default function AddBlog () {
     watch,
   } = useForm<addBlogTypes>();
   
-//   const router = useRouter();
+
   const selectedFile = watch("imageFile") as unknown as FileList | undefined;
   const [previewImage, setPreviewImage] = useState<string | null>(null);
   
@@ -96,19 +81,7 @@ export default function AddBlog () {
     }
   }, [selectedFile]);
   const queryclient = useQueryClient();
-//   const { mutate: submitBlog, isLoading: isSubmitting } = useMutation(
-//     addBlogApi,
-//     {
-//       onSuccess:async () => {
-//         showToast({ type: "SUCCESS", message: "Blog successfully published!" });
-//            await queryclient.invalidateQueries("validateToken")
-            
-//         navigate("/allBlogs");
-//       },
-//       onError: (error: Error) =>
-//         showToast({ type: "ERROR", message: error?.message || "Failed to publish blog" }),
-//     }
-//   );
+
 const { mutate: submitBlog, isPending: isSubmitting } = useMutation({
   mutationFn: addBlogApi, // your API call
   onSuccess: async () => {
@@ -117,7 +90,7 @@ const { mutate: submitBlog, isPending: isSubmitting } = useMutation({
     // ✅ v5 syntax: queryKey must be an array inside an object
     await queryclient.invalidateQueries({ queryKey: ["validateToken"] });
 
-    // router("/");
+
   },
   onError: (error: Error) => {
     showToast({

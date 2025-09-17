@@ -16,31 +16,31 @@ export const metadata: Metadata = {
     "SekaiSpace pricing"
   ],
 
-  openGraph: {
-    title: "Affordable Web Development Pricing Plans - SekaiSpace",
-    description: "Get professional websites starting from 25,000 PKR. Compare our Basic, Standard, and Enterprise plans for your business needs.",
-    url: "https://sekaispace.vercel.app/pricing",
-    type: "website",
-    images: [
-      {
-        url: "/pricing-og-image.jpg", // Create this image
-        width: 1200,
-        height: 630,
-        alt: "SekaiSpace Web Development Pricing Plans"
-      }
-    ]
-  },
+  // openGraph: {
+  //   title: "Affordable Web Development Pricing Plans - SekaiSpace",
+  //   description: "Get professional websites starting from 25,000 PKR. Compare our Basic, Standard, and Enterprise plans for your business needs.",
+  //   url: "https://sekaispace.vercel.app/pricing",
+  //   type: "website",
+  //   images: [
+  //     {
+  //       url: "/pricing-og-image.jpg", // Create this image
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "SekaiSpace Web Development Pricing Plans"
+  //     }
+  //   ]
+  // },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "Affordable Web Development Pricing - Starting 25,000 PKR",
-    description: "Professional websites with admin panels, SEO, and maintenance included. Compare our pricing plans.",
-    images: ["/pricing-twitter-image.jpg"]
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Affordable Web Development Pricing - Starting 25,000 PKR",
+  //   description: "Professional websites with admin panels, SEO, and maintenance included. Compare our pricing plans.",
+  //   images: ["/pricing-twitter-image.jpg"]
+  // },
 
-  alternates: {
-    canonical: "https://sekaispace.vercel.app/pricing"
-  }
+  // alternates: {
+  //   canonical: "https://sekaispace.vercel.app/pricing"
+  // }
 };
 
 

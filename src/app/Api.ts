@@ -229,10 +229,10 @@ const allBlogsApi = async (): Promise<addBlogTypes[]> => {
     throw new Error("Something Went Wrong!");
   }
 };
-type searchParams = {
+// type searchParams = {
   
-  page?: string;
-};
+//   page?: string;
+// };
 const searchPage = async (searchParams: { page: string; }
   // searchParams: searchParams
 ): Promise<blogSearchResponse> => {

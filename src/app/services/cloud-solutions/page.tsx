@@ -54,14 +54,14 @@ const CloudSolutions: React.FC = () => {
     };
 
     // Animation variants for item elements
-    const itemVariants = {
-        hidden: { y: 20, opacity: 0 },
-        visible: {
-            y: 0,
-            opacity: 1,
-            transition: { type: 'spring', stiffness: 100 },
-        },
-    };
+    // const itemVariants = {
+    //     hidden: { y: 20, opacity: 0 },
+    //     visible: {
+    //         y: 0,
+    //         opacity: 1,
+    //         transition: { type: 'spring', stiffness: 100 },
+    //     },
+    // };
     
     // --- Image URL ---
     const heroImageUrl = 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop';
@@ -126,7 +126,7 @@ const CloudSolutions: React.FC = () => {
                         <motion.div 
                             key={feature.name} 
                             className="bg-gray-800 p-6 rounded-xl border border-gray-700 text-center flex flex-col items-center"
-                            variants={itemVariants}
+                            // variants={itemVariants}
                             whileHover={{ scale: 1.05, borderColor: '#60a5fa' }} // blue-400
                             transition={{ type: 'spring', stiffness: 300 }}
                         >

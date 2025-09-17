@@ -1,15 +1,18 @@
 // /* eslint-disable react-hooks/rules-of-hooks */
-import { addBlogApi } from "@/Api";
-import { AppContext } from "@/context/AppNotify";
+import { addBlogApi } from "../Api";
+import { AppContext } from "../context/AppNotify";
 import { useEffect, useState } from "react";
 import { Controller, useForm } from "react-hook-form";
-import { useMutation, useQueryClient } from "react-query";
-import { useNavigate } from "react-router-dom";
+import { useMutation } from "@tanstack/react-query";
+// import { useNavigate } from "react-router-dom";
+
 // import { addBlogTypes } from "../../../backend/src/models/addBlog.models";
-import {addBlogTypes} from "../Api.ts";
+import {addBlogTypes} from "../Api";
 import { Button } from "./ui/button";
 import TextEditor from "./TextEditor";
 import { ImagePlus, Type, FileText, Info, Send } from "lucide-react";
+import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 // Blog Form Skeleton Loading Component
 const BlogFormSkeleton = () => {
@@ -42,7 +45,7 @@ const BlogFormSkeleton = () => {
 
 export const AddBlog = () => {
   const { showToast } = AppContext();
-  //  const { isAdmin } = useAuth();
+  const router=useRouter();  //  const { isAdmin } = useAuth();
   //   if (!isLogged) {
   //   return (
   //     <div className="max-w-4xl mx-auto p-4 md:p-6 text-center">
@@ -70,7 +73,7 @@ export const AddBlog = () => {
     watch,
   } = useForm<addBlogTypes>();
   
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const selectedFile = watch("imageFile") as unknown as FileList | undefined;
   const [previewImage, setPreviewImage] = useState<string | null>(null);
   
@@ -89,19 +92,23 @@ export const AddBlog = () => {
       setPreviewImage(null);
     }
   }, [selectedFile]);
-  const queryclient = useQueryClient();
-  const { mutate: submitBlog, isLoading: isSubmitting } = useMutation(
-    addBlogApi,
+  // const queryclient = useQueryClient();
+  const { mutate: submitBlog, isPending: isSubmitting } = useMutation(
     {
-      onSuccess:async () => {
+      mutationKey:["addblog"],
+      mutationFn:addBlogApi,
+       onSuccess:async () => {
         showToast({ type: "SUCCESS", message: "Blog successfully published!" });
-           await queryclient.invalidateQueries("validateToken")
+          //  await queryclient.invalidateQueries("validateToken")
             
-        navigate("/allBlogs");
+        router.push("/blogs");
       },
       onError: (error: Error) =>
         showToast({ type: "ERROR", message: error?.message || "Failed to publish blog" }),
     }
+
+   
+     
   );
 
   // Simulate initial loading
@@ -174,8 +181,9 @@ export const AddBlog = () => {
               />
               {previewImage && (
                 <div className="mt-3 relative w-full h-32 rounded-lg overflow-hidden">
-                  <img 
+                  <Image 
                     src={previewImage} 
+                    fill
                     alt="Preview" 
                     className="w-full h-full object-cover object-center"
                   />

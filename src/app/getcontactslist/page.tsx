@@ -8,9 +8,11 @@ import { useState } from "react";
 
 // import { useSearchContext } from "@/context/SearchContext";
 
-import { BlogSkeleton } from "../blogs/page";
+// import { BlogSkeleton } from "../blogs/page";
+
 // import { useSearchContext } from "../context/SearchContext";
 import Pagination from "../components/Pagination";
+import { BlogSkeleton } from "../components/blog";
 // import { addBlogTypes } from "../../../backend/src/models/addBlog.models";
 // import { BlogSkeleton } from "./Blog";
 

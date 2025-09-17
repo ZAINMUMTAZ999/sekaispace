@@ -102,16 +102,16 @@ const containerVariants = {
 };
 
 // Animation variants for each individual stat item to fade and slide in.
-const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            duration: 0.5,
-            ease: "easeOut",
-        },
-    },
-};
+// const itemVariants = {
+//     hidden: { opacity: 0, y: 20 },
+//     visible: {
+//         opacity: 1,
+//         y: 0,
+//         transition: {
+//             duration: 0.5,
+//             ease: "easeOut",
+//         },
+//     },
+// };
 
 export default YearsExperience;

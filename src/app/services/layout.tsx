@@ -16,33 +16,33 @@ export const metadata: Metadata = {
     "business digital solutions"
   ],
 
-  openGraph: {
-    title: "SekaiSpace | Web, Mobile & Cloud Solutions",
-    description:
-      "Professional web, mobile, and cloud solutions for businesses. Affordable pricing starting from 25,000 PKR. Build scalable websites, apps, and cloud platforms with SekaiSpace.",
-    url: "https://sekaispace.vercel.app/services",
-    type: "website",
-    images: [
-      {
-        url: "/services-og-image.jpg", // Create this image
-        width: 1200,
-        height: 630,
-        alt: "SekaiSpace Web, Mobile & Cloud Development Services"
-      }
-    ]
-  },
+  // openGraph: {
+  //   title: "SekaiSpace | Web, Mobile & Cloud Solutions",
+  //   description:
+  //     "Professional web, mobile, and cloud solutions for businesses. Affordable pricing starting from 25,000 PKR. Build scalable websites, apps, and cloud platforms with SekaiSpace.",
+  //   url: "https://sekaispace.vercel.app/services",
+  //   type: "website",
+  //   images: [
+  //     {
+  //       url: "/services-og-image.jpg", // Create this image
+  //       width: 1200,
+  //       height: 630,
+  //       alt: "SekaiSpace Web, Mobile & Cloud Development Services"
+  //     }
+  //   ]
+  // },
 
-  twitter: {
-    card: "summary_large_image",
-    title: "SekaiSpace - Web, Mobile & Cloud Development",
-    description:
-      "We provide affordable web development, mobile apps, and cloud solutions. Starting from 25,000 PKR.",
-    images: ["/services-twitter-image.jpg"]
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "SekaiSpace - Web, Mobile & Cloud Development",
+  //   description:
+  //     "We provide affordable web development, mobile apps, and cloud solutions. Starting from 25,000 PKR.",
+  //   images: ["/services-twitter-image.jpg"]
+  // },
 
-  alternates: {
-    canonical: "https://sekaispace.vercel.app/services"
-  }
+  // alternates: {
+  //   canonical: "https://sekaispace.vercel.app/services"
+  // }
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

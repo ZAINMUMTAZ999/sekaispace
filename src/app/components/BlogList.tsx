@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { addBlogTypes } from "../Api";
 
 export default function BlogsList({ data }:{data:addBlogTypes[]}) {
@@ -11,7 +11,7 @@ export default function BlogsList({ data }:{data:addBlogTypes[]}) {
       {/* Responsive grid */}
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {data?.map((blog) => {
-          const { title, imageFile } = blog;
+          const { title } = blog;
 
           return (
             <article

@@ -21,17 +21,17 @@ export const metadata: Metadata = {
     icon: "/vercel.svg", // or "/logo.png", "/logo.svg"
   },
   description: "SekaiSpace specializes in full-stack web development, mobile apps, and custom software solutions. Transform your business with cutting-edge technology.",
-  metadataBase: new URL("https://sekaispace.vercel.app"), // Add your domain
-  openGraph: {
-    type: "website",
-    siteName: "SekaiSpace",
-    title: "SekaiSpace - Premier Software Development Company",
-    description: "Transform your business with cutting-edge software solutions.",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  // metadataBase: new URL("https://sekaispace.vercel.app"), // Add your domain
+  // openGraph: {
+  //   type: "website",
+  //   siteName: "SekaiSpace",
+  //   title: "SekaiSpace - Premier Software Development Company",
+  //   description: "Transform your business with cutting-edge software solutions.",
+  // },
+  // robots: {
+  //   index: true,
+  //   follow: true,
+  // },
 };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
