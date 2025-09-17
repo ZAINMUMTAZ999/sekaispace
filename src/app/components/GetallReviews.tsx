@@ -70,7 +70,7 @@ const { data: reviewsData, isLoading, isError, error } = useQuery<addReviewTypes
           <p className="text-gray-500 mb-8">Be the first to share your experience!</p>
 
           <Link
-            href="/addReview"
+            href="/addreview"
             className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white px-8 py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
           >
             <Star className="w-5 h-5" />
