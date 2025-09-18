@@ -89,13 +89,13 @@ export const AddReview = () => {
 
         <div className="relative max-w-4xl mx-auto px-6 pt-8 pb-16" id="add-review-top">
           {/* Back Button */}
-          <Link 
+          {/* <Link 
             href="/" 
             className="inline-flex items-center gap-2 text-gray-600 hover:text-gray-900 mb-8 group transition-colors"
           >
             <ArrowLeft className="w-5 h-5 transform group-hover:-translate-x-1 transition-transform" />
             <span className="font-medium">Back to Home</span>
-          </Link>
+          </Link> */}
 
           {/* Header */}
           <div className="text-center mb-12">
