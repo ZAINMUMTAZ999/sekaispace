@@ -74,7 +74,7 @@ export type addReviewTypes = {
 
 
 
-const Base_Url_API = "https://68cae40d2013f615b4aad1fb--lively-boba-e2000d.netlify.app/api";
+const Base_Url_API = "https://68f7a1aeb6df80776af90aa9--lively-boba-e2000d.netlify.app/api";
 // const Base_Url_API = "http://localhost:8000";
 
 const registerApi = async (formDatajson: registerUserTypes) => {
