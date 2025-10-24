@@ -6,9 +6,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import logo from "../assets/logo.svg";
-import { Button } from "./ui/button";
-import { AppContext } from "../context/AppNotify";
-import Logout from "../(auth)/logout/page";
+// import { Button } from "./ui/button";
+// import { AppContext } from "../context/AppNotify";
+// import Logout from "../(auth)/logout/page";
+
 
 const navLinks = [
   {
@@ -23,14 +24,14 @@ const navLinks = [
   { name: "About Us", href: "/about" },
   { name: "Contact Us", href: "/contact" },
   { name: "Blogs", href: "/blogs" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "Pricing", href: "/pricing" }
 ];
 
 const Header = () => {
   const [mobileNav, setMobileNav] = useState(false);
   const [servicesDropdown, setServicesDropdown] = useState(false);
   const pathname = usePathname();
-  const { isLogged, isAdmin } = AppContext();
+  // const { isLogged, isAdmin } = AppContext();
   return (
     <header className="sticky top-0 z-50 bg-white shadow-sm">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
@@ -103,7 +104,7 @@ const Header = () => {
           })}
         </nav>
   {/* Desktop Admin BTNs */}
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <span>
             {isAdmin && (
               // <Link href="/about">Logout</Link>
@@ -119,10 +120,10 @@ const Header = () => {
               </div>
             )}
           </span>
-        </div>
+        </div> */}
 
         {/* Desktop Login Button */}
-        <div className="hidden lg:block">
+        {/* <div className="hidden lg:block">
           <Button
             asChild
             className="bg-blue-600 hover:bg-blue-700 text-white px-6"
@@ -135,7 +136,7 @@ const Header = () => {
             )}
           </Button>
         </div>
-      
+       */}
         {/* Mobile menu icon */}
         <button
           className="lg:hidden text-gray-700"
@@ -219,12 +220,12 @@ const Header = () => {
             })}
 
             {/* Mobile Login Button */}
-            <Button
+            {/* <Button
               asChild
               className="mt-6 w-full bg-blue-600 hover:bg-blue-700 text-white"
             >
               {isLogged ? <Logout /> : <Link href="/login">Login</Link>}
-            </Button>
+            </Button> */}
           </nav>
         </aside>
       </div>
