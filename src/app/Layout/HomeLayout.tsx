@@ -13,7 +13,6 @@ const HomeLayout = ({ children }: Props) => {
   return (
   
     <div className="min-h-screen flex flex-col   bg-white">
-
       <Header />
       
  <AppNotifyProvider

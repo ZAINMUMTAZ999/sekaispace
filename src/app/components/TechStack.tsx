@@ -95,7 +95,7 @@ const TechStack = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-b from-white to-gray-50/50 py-0 lg:py-0  " ref={ref}>
+    <section className="relative bg-gradient-to-b mt-8 from-white to-gray-50/50 py-0 lg:py-0  " ref={ref}>
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-20 w-64 h-64 bg-purple-100/40 rounded-full blur-3xl" />
