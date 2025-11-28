@@ -66,7 +66,7 @@ const Header = () => {
                     className={`flex items-center gap-1 font-medium transition-colors ${
                       isActive
                         ? "text-blue-700"
-                        : "text-gray-700 hover:text-blue-600"
+                        : "text-gray-700 hover:text-blue-600 hover:cursor-pointer"
                     }`}
                   >
                     {nav.name} <ChevronDown size={16} />
