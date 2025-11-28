@@ -16,8 +16,8 @@ export default function GetallReviews  () {
 const { data: reviewsData, isLoading, isError, error } = useQuery<addReviewTypes[], Error>({
   queryKey: ["reviews"],
   queryFn: GetAllReviewsApi,
-  // staleTime: 1000 * 60, // 1 minute cache (optional)
-  // retry: 2,            // retry twice on error (optional)
+  staleTime: 1000 * 60, // 1 minute cache (optional)
+  retry: 2,            // retry twice on error (optional)
 });
 
   const containerRef = useRef<HTMLDivElement>(null);
