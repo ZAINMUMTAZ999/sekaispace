@@ -35,7 +35,7 @@ const { data: reviewsData, isLoading, isError, error } = useQuery<addReviewTypes
 
   if (isLoading) {
     return (
-      <div className="max-w-6xl mx-auto px-4 mt-12">
+      <div className=" mt-12">
         <div className="animate-pulse">
           <div className="h-8 bg-gray-200 rounded w-64 mb-6"></div>
           <div className="flex space-x-4">
