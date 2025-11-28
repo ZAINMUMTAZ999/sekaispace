@@ -39,6 +39,8 @@ export const BlogsLaningPage = () => {
   } = useQuery<addBlogTypes[], Error>({
     queryKey: ['allBlogs'],
     queryFn: allBlogsApi,
+    staleTime: 1000 * 60, // 1 minute cache (optional)
+  retry: 2,            // retry twice on error (optional)
   });
 
   if (isLoading) {
@@ -66,7 +68,7 @@ const top3Blogs = displayedBlogs
 
 
   return (
-    <div className="container mx-auto p-4 md:p-8">
+    <Link className="container mx-auto p-4 md:p-8 hover:cursor-pointer"  href="/blogs">
       {/* "Latest Blogs" Header similar to the image */}
        <motion.div
             initial={{ y: -30, opacity: 0 }}
@@ -144,7 +146,7 @@ const top3Blogs = displayedBlogs
       ) : (
         <p className="text-center text-gray-600 text-lg mt-8">No blogs to display.</p>
       )}
-    </div>
+    </Link>
   );
 };
 // Skeleton component for individual elements

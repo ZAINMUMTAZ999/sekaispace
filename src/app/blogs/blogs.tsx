@@ -203,7 +203,7 @@ const { data: searchResult, isLoading, error } = useQuery({
               <div className="mt-auto">
                 <button
                   onClick={() => handleReadMore(blog._id)}
-                  className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors w-full sm:w-auto"
+                  className="bg-blue-500 text-white px-4 py-2 hover:cursor-pointer rounded-md hover:bg-blue-600 transition-colors w-full sm:w-auto"
                 >
                   Read More
                 </button>
