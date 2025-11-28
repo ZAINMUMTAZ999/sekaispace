@@ -68,7 +68,8 @@ const top3Blogs = displayedBlogs
 
 
   return (
-    <Link className="container mx-auto p-4 md:p-8 hover:cursor-pointer"  href="/blogs">
+    // p-4 md:p-8
+    <Link className="container mx-auto  hover:cursor-pointer"  href="/blogs">
       {/* "Latest Blogs" Header similar to the image */}
        <motion.div
             initial={{ y: -30, opacity: 0 }}
