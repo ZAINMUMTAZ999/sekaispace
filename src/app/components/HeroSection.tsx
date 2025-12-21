@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { Button } from "./ui/button"
-// import { Button } from "@/components/ui/button"
 
 
 export default function HeroSection() {
@@ -32,8 +31,7 @@ export default function HeroSection() {
 
         {/* Right media */}
         <div className="w-full lg:w-[45%] relative h-[280px] sm:h-[380px] md:h-[460px] lg:h-[520px]">
-          {/* Option A: Optimized Image (if static) */}
-          {/* <Image src="/video.gif" alt="Animation" fill className="object-cover rounded-lg" unoptimized quality={100} priority /> */}
+        
           <Image
             src="/video.gif"
             alt="Hero visual"
@@ -43,20 +41,6 @@ export default function HeroSection() {
             priority
           />
 
-          {/* Option B: Video (BEST for animation) */}
-          {/*
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            className="w-full h-full object-cover rounded-lg"
-            poster="/hero-poster.jpg"
-          >
-            <source src="/hero.webm" type="video/webm" />
-            <source src="/hero.mp4" type="video/mp4" />
-          </video>
-          */}
         </div>
       </div>
     </section>
