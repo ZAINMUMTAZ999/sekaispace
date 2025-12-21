@@ -80,7 +80,7 @@ export const ClientHeader = () => {
       </div>
 
       <div className="relative z-10 w-full">
-        <p className="text-white   mt-2 text-center px-4">
+        <p className="text-neutral-400   mt-2 text-center px-4">
           Trusted by
         </p>
 
@@ -99,7 +99,7 @@ export const ClientHeader = () => {
                   <Image
                     src={tech.image}
                     alt="trust"
-                    className={`object-contain white-logo text-white ${
+                    className={`object-contain white-logo ${
                       // scale up smaller logos slightly
                       [2, 4, 7, 9].includes(tech.id)
                         ? "scale-125"
