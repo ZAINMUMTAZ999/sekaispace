@@ -18,7 +18,7 @@ import WorkingMethodology from "./components/WorkingMethodolgy";
 // import { BlogsLaningPage } from "./components/BlogsLaningPage";
 import TechStack from "./components/TechStack";
 import GetallReviews from "./components/GetallReviews";
-import HeroSection from "./components/HeroSection";
+import {HeroSection} from "./components/HeroSection";
 import YearsExperience from './components/YearsExperience';
 import { BlogsLaningPage } from './components/BlogsLaningPage';
 import FaqSection from "./components/Faqs";
