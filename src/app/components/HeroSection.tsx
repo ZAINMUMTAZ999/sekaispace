@@ -39,6 +39,7 @@ export default function HeroSection() {
             className="object-cover  rounded-lg"
             sizes="(max-width: 1024px) 100vw, 45vw"
             priority
+            unoptimized
           />
 
         </div>
