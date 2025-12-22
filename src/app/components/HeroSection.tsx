@@ -16,7 +16,7 @@ export const HeroSection = () => {
               Engineering Intelligent & Scalable Digital Solutions
             </h1>
             <p className="text-gray-300 mb-6 sm:mb-7 md:mb-8 text-base sm:text-lg">
-              We are leading software development company engineering next-generation
+              We  leading software development company engineering next-generation
               digital solutions, embedding AI and data-driven intelligence into workflows
               that fuel efficiency and unlock new growth opportunities.
             </p>
