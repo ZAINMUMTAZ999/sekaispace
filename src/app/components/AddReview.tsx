@@ -6,7 +6,6 @@ import { useMutation } from "@tanstack/react-query";
 import {addReviewTypes} from "../Api";
 import { Button } from "./ui/button";
 import {  Send,  MessageSquare } from "lucide-react";
-// import { Link, useNavigate } from "react-router-dom";
 
 import { useEffect, useRef } from "react";
 import { AppContext } from "../context/AppNotify.jsx";
