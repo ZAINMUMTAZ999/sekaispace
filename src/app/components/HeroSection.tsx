@@ -1,7 +1,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-// #AE2FE0
+
 export const HeroSection = () => {
   return (
     <div className="min-h-[72vh] -mt-2  bg-gray-900 flex justify-between items-center px-4 rounded-x relative overflow-hidden">

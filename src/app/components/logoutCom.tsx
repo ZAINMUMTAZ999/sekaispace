@@ -21,6 +21,6 @@ const router=useRouter();
         muatteion.mutate()
     }
     return (
-        <Button className="bg-red-500 hover:bg-red-300 flex-1 hover:cursor-pointer text-white font-bold p-1 rounded" onClick={submition}>Logout</Button>
+        <Button className="bg-red-500 hover:bg-red-300 flex-1 hover:cursor-pointer text-white font-bold p-1 rounded" onClick={submition}>SignOut</Button>
     )
 }
