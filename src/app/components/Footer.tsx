@@ -16,7 +16,7 @@ const Footer = () => {
                   </b>
                 Space
               </span>
-          <p className="text-sm  text-black">
+          <p className="text-xs sm:text-base text-black">
             Building innovative, scalable digital solutions href empower your startup.
           </p>
         </div>
@@ -24,7 +24,7 @@ const Footer = () => {
         {/* Services */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Services</h3>
-          <ul className="space-y-2 text-sm text-black underline ">
+          <ul className="space-y-2 text-base sm:text-sm text-black underline ">
             <li><Link href="/webApp" className="hover:text-gray-500 ">Web Development</Link></li>
             <li><Link href="/mobileApp" className="hover:text-gray-500">Mobile Apps</Link></li>
             <li><Link href="/cloudSolutions" className="hover:text-gray-500">Cloud Deployment</Link></li>
@@ -35,7 +35,7 @@ const Footer = () => {
         {/* Company */}
         <div>
           <h3 className="text-lg font-semibold mb-4">Company</h3>
-          <ul className="space-y-2 text-sm text-black underline">
+          <ul className="space-y-2 text-base sm:text-sm text-black underline">
             <li><Link href="/aboutUs" className="hover:text-gray-500">About Us</Link></li>
             <li><Link href="/allBlogs" className="hover:text-gray-500">Blogs</Link></li>
             <li><Link href="/contactUs" className="hover:text-gray-500">Contact</Link></li>
@@ -61,7 +61,7 @@ const Footer = () => {
         // href="mailhref:mzainmumtaz99@gmail.com"
         className="text-sm text-black flex items-center group"
       >
-        <Mail size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-gray-500 transition-colors" />
+        <Mail size={16} className="mr-2 flex-shrink-0 text-base sm:text-sm text-gray-600 group-hover:text-gray-500 transition-colors" />
         {/* <span className="group-hover:underline group-hover:text-white transition-colors">
           mzainmumtaz99@gmail.com
         </span> */}
@@ -81,7 +81,7 @@ const Footer = () => {
         className="text-sm text-black flex items-center group"
       >
         <Phone size={16} className="mr-2 flex-shrink-0 text-gray-600 group-hover:text-gray-500 transition-colors" />
-        <span className="group-hover:underline group-hover:text-gray-500transition-colors">
+        <span className="group-hover:underline group-hover:text-gray-500transition-colors text-base sm:text-sm">
           +92324-6288217
         </span>
       </a>

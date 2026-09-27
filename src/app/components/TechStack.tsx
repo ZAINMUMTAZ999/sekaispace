@@ -95,7 +95,7 @@ const TechStack = () => {
   };
 
   return (
-    <section className="relative bg-gradient-to-b  from-white to-gray-50/50 py-0 lg:py-0  -mt-12  " ref={ref}>
+    <section className="relative bg-gradient-to-b mt-8 from-white to-gray-50/50 py-0 lg:py-0   " ref={ref}>
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 right-20 w-64 h-64 bg-purple-100/40 rounded-full blur-3xl" />
@@ -112,7 +112,7 @@ const TechStack = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl"
           >
-            <h2 className="text-2xl  mt-20 md:-mt-4 sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight ">
+           <h2 className="text-lg -mt-2 sm:mt-0  sm:text-xl md:-mt-4 lg:text-2xl xl:text-3xl font-bold text-gray-900 leading-tight">
               <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
                 We&apos;ve got the tools, the team, and the energy to make it happen.
               </span>
@@ -120,7 +120,7 @@ const TechStack = () => {
           </motion.div>
 
           <motion.p
-            className="text-base sm:text-sm md:text-lg lg:text-xl xl:text-xl  text-gray-600 leading-relaxed font-serif max-w-3xl"
+            className="text-xs sm:text-sm  text-gray-600 leading-relaxed font-serif max-w-3xl"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
