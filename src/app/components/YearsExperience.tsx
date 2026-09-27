@@ -36,15 +36,15 @@ const AnimatedCounter: React.FC<AnimatedCounterProps> = ({ to, styleType, suffix
     }, [isInView, count, to]);
 
     // Define styles based on the 'styleType' prop to match the reference image.
-    const baseStyle = "text-7xl md:text-8xl lg:text-9xl font-sans tracking-tighter";
+    const baseStyle = "text-xs sm:text-base  font-sans tracking-tighter";
     const typeStyle = styleType === 'outline'
         ? 'font-extralight text-gray-900' // Using a light font weight for the "outline" effect
         : 'font-bold text-black';         // Using a bold font for the "solid" effect
 
     return (
         // The `ref` is attached here to the element we want to track.
-        <p className={`${baseStyle} ${typeStyle}`} ref={ref}>
-            <motion.span>{rounded}</motion.span>
+        <p className={`${baseStyle} ${typeStyle} text-xs sm:text-base  `} ref={ref}>
+            <motion.span className="text-xs sm:text-base  ">{rounded}</motion.span>
             {suffix && <span>{suffix}</span>}
         </p>
     );
