@@ -5,7 +5,7 @@ import { ClientHeader } from "./ClientHeader"
 
 export const HeroSection = () => {
   return (
-    <div className=" max-h-screen md:min-h-[78vh] bg-gray-900 flex justify-between items-center px-4 rounded-x relative overflow-hidden">
+    <div className=" max-h-screen md:min-h-[78vh] bg-gray-900 flex justify-between -mt-2 items-center px-4 rounded-x relative overflow-hidden">
       {/* Purple shadow overlay from right side */}
       <div className="absolute right-0 top-0 bottom-0 w-[40%] bg-linear-to-l from-[#AE2FE0]/60 via-[#AE2FE0]/20 to-transparent pointer-events-none"></div>
       
@@ -16,12 +16,12 @@ export const HeroSection = () => {
             <h1 className="text-xl  sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight">
               Engineering Intelligent & Scalable Digital Solutions
             </h1>
-            <p className="text-gray-300 mb-6 sm:mb-7 md:mb-8 text-base sm:text-lg">
+            <p className="text-gray-300 mb-6 sm:mb-7 md:mb-8 text-xs sm:text-sm">
 A leading software development company crafting next-generation digital solutions, integrating AI and data-driven intelligence to optimize workflows, enhance efficiency, and drive new growth opportunities.
             </p>
             <Link href="/contact"
               className="relative overflow-hidden bg-gray-700 text-white font-medium px-6 sm:px-8 py-2.5 sm:py-3 rounded-md
-                         hover:bg-gray-600 transition-all duration-500 group hover:cursor-pointer text-sm sm:text-base"
+                         hover:bg-gray-600 transition-all duration-500 group hover:cursor-pointer text-xs "
             >
               <span className="relative z-10">Contact Us</span>
             </Link>

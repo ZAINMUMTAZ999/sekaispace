@@ -62,14 +62,14 @@ export default function FaqSection() {
             >
               <span className=" text-sm  ">{faq.question}</span>
               {openIndex === index ? (
-                <ChevronUp className="w-5 h-5 text-purple-600" />
+                <ChevronUp className="w-5 h-5 text-[#aab8b7]" />
               ) : (
                 <ChevronDown className="w-5 h-5 text-gray-500" />
               )}
             </button>
 
             {openIndex === index && (
-              <div className="px-6 pb-5 text-gray-700 text-base  bg-gray-50">
+              <div className="px-6 pb-5 text-gray-700 text-xs  bg-gray-50">
                 {faq.answer}
               </div>
             )}

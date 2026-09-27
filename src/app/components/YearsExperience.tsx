@@ -64,7 +64,7 @@ const YearsExperience = () => {
 
     return (
         // Using a clean, professional light gray background.
-        <section className="w-full bg-gray-50 text-gray-900 py-16 md:py-24 overflow-hidden">
+        <section className="w-full bg-gray-50 text-gray-900 py-8 md:py-16 overflow-hidden">
             <div className="container mx-auto px-4">
                
 
@@ -80,11 +80,12 @@ const YearsExperience = () => {
                     viewport={{ once: true, amount: 0.2 }}
                 >
                     {stats.map((stat, index) => (
-                         <motion.div key={index} className="flex flex-col items-center text-center" 
+                         <motion.div key={index} className="flex flex-col items-center text-center text-xs sm:text-base" 
                         //  variants={itemVariants}
                          >
-                            <AnimatedCounter to={stat.value} styleType={stat.styleType} suffix={stat.suffix} />
-                            <p className="text-base sm:text-xl lg:text-2xl mx-auto">{stat.label}</p>
+
+                            <AnimatedCounter to={stat.value} styleType={stat.styleType} suffix={stat.suffix}  />
+                            <p className="text-xs sm:text-base  mx-auto">{stat.label}</p>
                         </motion.div>
                     ))}
                 </motion.div>

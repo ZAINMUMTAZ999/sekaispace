@@ -80,7 +80,7 @@ export const ClientHeader = () => {
       </div>
 
       <div className="relative z-10 w-full">
-        <p className="text-neutral-400   mt-2 text-center px-4">
+        <p className="text-white   mt-1 text-center px-4 text-xs sm:text-base">
           Trusted by
         </p>
 
