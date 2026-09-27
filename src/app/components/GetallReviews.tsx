@@ -86,10 +86,7 @@ const { data: reviewsData, isLoading, isError, error } = useQuery<addReviewTypes
     <div className=" container mx-auto mt-12 relative">
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-8">
-        <div>
-          <h2 className="text-2xl font-bold text-gray-900 mb-1 sm:mb-2">Customer Reviews</h2>
-          <p className="text-gray-600">See what our community is saying</p>
-        </div>
+      
 <div className="w-full flex justify-end">
   <Link
     href="/addreview"
@@ -135,13 +132,13 @@ const { data: reviewsData, isLoading, isError, error } = useQuery<addReviewTypes
  
         left-2 top-1/2 -translate-y-1/2 z-10 mt-12 -ml-4 bg-white hover:bg-gray-50 shadow-lg border border-gray-200 w-10 h-10 rounded-full items-center justify-center transition-all duration-200"
       >
-        <span className="text-gray-600 text-lg ">←</span>
+        {/* <span className="text-gray-600 text-lg ">←</span> */}
       </button>
       <button
         onClick={() => scroll("right")}
         className="hidden sm:flex absolute right-2 top-1/2 mt-12  -ml-4 -translate-y-1/2 z-10 bg-white hover:bg-gray-50 shadow-lg border border-gray-200 w-10 h-10 rounded-full items-center justify-center  transition-all duration-200"
       >
-        <span className="text-gray-600 text-lg ">→</span>
+        {/* <span className="text-gray-600 text-lg ">→</span> */}
       </button>
 
       {/* Reviews list */}

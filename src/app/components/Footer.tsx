@@ -23,7 +23,7 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Services</h3>
+          <h3 className=" font-semibold mb-4">Services</h3>
           <ul className="space-y-2 text-base sm:text-sm text-black underline ">
             <li><Link href="/webApp" className="hover:text-gray-500 ">Web Development</Link></li>
             <li><Link href="/mobileApp" className="hover:text-gray-500">Mobile Apps</Link></li>
