@@ -19,7 +19,7 @@ export default function Home() {
       <WorkingMethodology />
       <Portfolio />
 
-      <h1 className="flex justify-center text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900">
+      <h1 className="flex justify-center text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-wide tracking-tight text-gray-900">
         <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent inline-block">
           Customer&apos;s Reviews
         </span>

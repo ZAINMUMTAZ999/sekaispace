@@ -44,8 +44,8 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="max-w-5xl mx-auto py-16 px-4">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
+    <section className="max-w-5xl mx-auto py-8 px-4">
+      <h2 className="text-xl md:text-2xl font-bold text-center mb-10">
         Frequently Asked Questions
       </h2>
 
@@ -60,7 +60,7 @@ export default function FaqSection() {
                   : "hover:bg-gray-50 hover:cursor-pointer"
               }`}
             >
-              <span>{faq.question}</span>
+              <span className=" text-sm  ">{faq.question}</span>
               {openIndex === index ? (
                 <ChevronUp className="w-5 h-5 text-purple-600" />
               ) : (
@@ -69,7 +69,7 @@ export default function FaqSection() {
             </button>
 
             {openIndex === index && (
-              <div className="px-6 pb-5 text-gray-700 text-sm md:text-base bg-gray-50">
+              <div className="px-6 pb-5 text-gray-700 text-base  bg-gray-50">
                 {faq.answer}
               </div>
             )}

@@ -1,18 +1,19 @@
 
 import Image from "next/image"
 import Link from "next/link"
+import { ClientHeader } from "./ClientHeader"
 
 export const HeroSection = () => {
   return (
-    <div className="min-h-[72vh] -mt-2  bg-gray-900 flex justify-between items-center px-4 rounded-x relative overflow-hidden">
+    <div className=" max-h-screen md:min-h-[78vh] bg-gray-900 flex justify-between items-center px-4 rounded-x relative overflow-hidden">
       {/* Purple shadow overlay from right side */}
       <div className="absolute right-0 top-0 bottom-0 w-[40%] bg-linear-to-l from-[#AE2FE0]/60 via-[#AE2FE0]/20 to-transparent pointer-events-none"></div>
       
-      <div className="flex flex-col lg:flex-row w-full container mx-auto relative z-10">
+      <div className="flex flex-col lg:flex-row w-full container mx-auto -mt-2 md:-mt-32 relative z-10">
         {/* Left Side - 70% on lg, full width on smaller screens */}
         <div className="w-full lg:w-[70%] p-4 sm:p-6 md:p-8 mt-8 sm:mt-12 md:mt-16 lg:mt-22">
           <div className="max-w-[700px]">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight">
+            <h1 className="text-xl  sm:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-5 md:mb-6 leading-tight">
               Engineering Intelligent & Scalable Digital Solutions
             </h1>
             <p className="text-gray-300 mb-6 sm:mb-7 md:mb-8 text-base sm:text-lg">
@@ -28,8 +29,8 @@ A leading software development company crafting next-generation digital solution
         </div>
 
         {/* Right Side - Responsive video section */}
-        <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start relative lg:-ml-16 mt-8 lg:mt-0 px-4 sm:px-8 lg:px-0">
-          <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
+        <div className="w-full lg:w-[50%] flex items-center justify-center lg:justify-start relative -mt-2 lg px-4 sm:px-8 lg:px-0">
+          <div className="relative w-full h-[320px] sm:h-[400px] md:h-[500px] lg:h-[600px]">
             <Image
               src="/video.gif"
               alt="Animation"
@@ -46,7 +47,13 @@ A leading software development company crafting next-generation digital solution
 /> */}
           </div>
         </div>
+
+
+        {/* <ClientHeader/> */}
+      {/* <ClientHeader/> */}
       </div>
+
+
     </div>
   )
 }

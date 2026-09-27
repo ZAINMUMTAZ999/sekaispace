@@ -51,21 +51,21 @@ const WorkingMethodology = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <div className=" bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Stylish Heading */}
       <div className="container mx-auto px-6 py-16 relative z-10">
-        <div className="text-center mb-20">
+        <div className="text-center ">
           <motion.div
             initial={{ y: -30, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900 mb-6">
+            <h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-wide text-gray-900 mb-6">
               <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent inline-block">
                 Our Working Methodology
               </span>
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-sm   text-gray-600 max-w-3xl mx-auto leading-relaxed">
               A proven 5-step process that transforms your ideas into market-ready solutions
             </p>
           </motion.div>
@@ -74,7 +74,7 @@ const WorkingMethodology = () => {
         {/* Methodology Cards */}
         {/* <div className="grid grid-cols-1  md:grid-cols-2  lg:grid-cols-3 xl:grid-cols-5 gap-12 mb-16"> */}
    
-<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 place-items-center gap-12 mb-16">
+<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 place-items-center gap-6 md:gap-12 ">
           {methodologySteps.map((step, index) => {
             const IconComponent = step.icon;
 
@@ -92,10 +92,10 @@ const WorkingMethodology = () => {
                 )}
 
                 {/* Step Container */}
-                <div className="relative z-10  bg-white p-8 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 group-hover:border-gray-200 sm:max-h-[300px] md:min-h-[700px] flex flex-col w-72 rounded-2xl md:rounded-full">
+                <div className="relative z-10  bg-white p-2  shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 border border-gray-100 group-hover:border-gray-200 max-h-[280px] sm:max-h-[300px] md:min-h-[500px] flex flex-col w-72 rounded-2xl md:rounded-full">
                   {/* Step Number Circle */}
                   <div className="relative mb-8">
-                    <div className={`w-24 h-24 mx-auto rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center relative overflow-hidden ${step.shadowColor} group-hover:scale-110 transition-transform duration-300`}>
+                    <div className={`w-12 h-12 mx-auto rounded-full bg-gradient-to-r ${step.color} flex items-center justify-center relative overflow-hidden ${step.shadowColor} group-hover:scale-110 transition-transform duration-300`}>
                       <div className="absolute inset-1 rounded-full bg-white opacity-20"></div>
                       <span className="text-white font-bold text-2xl relative z-10">{step.id}</span>
                       <div className="absolute inset-0 rounded-full border-4 border-white opacity-20 animate-ping group-hover:animate-pulse"></div>
@@ -104,24 +104,24 @@ const WorkingMethodology = () => {
 
                   {/* Icon */}
                   <div className="mb-6 flex justify-center">
-                    <div className="w-16 h-16 md:w-24 md:h:24 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-all duration-300 shadow-sm">
-                      <IconComponent className="w-8 h-8 text-gray-700 group-hover:text-blue-600 transition-colors duration-300" />
+                    <div className="w-4 h-4 md:w-24 md:h:24 bg-gradient-to-br from-gray-50 to-gray-100 rounded-2xl flex items-center justify-center group-hover:from-blue-50 group-hover:to-blue-100 transition-all duration-300 shadow-sm">
+                      <IconComponent className="w-4 h-4 sm:h-5 sm:w-5 md:8 md:h-8 text-gray-700 group-hover:text-blue-600 transition-colors duration-300" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="text-center flex-grow flex flex-col">
-                    <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 leading-tight group-hover:text-gray-900 transition-colors duration-300">
+                    <h3 className="text-sm md:text-xl font-bold text-gray-800 mb-4 leading-tight group-hover:text-gray-900 transition-colors duration-300">
                       {step.title}
                     </h3>
-                    <p className="text-gray-600 text-sm md:text-lg leading-relaxed flex-grow group-hover:text-gray-700 transition-colors duration-300 ">
+                    <p className="text-gray-600 text-xs md:text-sm leading-relaxed flex-grow group-hover:text-gray-700 transition-colors duration-300 ">
                       {step.description}
                     </p>
                   </div>
 
                   {/* Bottom accent */}
-                  <div className="mt-6 pt-4  border-t border-gray-100">
-                    <div className={`w-16 h-2 bg-gradient-to-r ${step.color} rounded-full mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300`}></div>
+                  <div className="hidden md:mt-3 pt-4  border-t border-gray-100">
+                    <div className={`w-6 h-1 md:w-16 md:h-2 bg-gradient-to-r ${step.color} rounded-full mx-auto opacity-60 group-hover:opacity-100 transition-opacity duration-300`}></div>
                   </div>
 
                   {/* Hover glow effect */}
@@ -135,7 +135,7 @@ const WorkingMethodology = () => {
         
 
         {/* Decorative Line Under Cards */}
-        <div className="flex justify-center items-center">
+        {/* <div className="flex justify-center items-center">
           <div className="flex items-center space-x-4 opacity-30">
             <div className="w-8 h-8 border-2 border-blue-300 rounded-full"></div>
             <div className="w-16 h-0.5 bg-gradient-to-r from-blue-300 to-purple-300"></div>
@@ -143,7 +143,7 @@ const WorkingMethodology = () => {
             <div className="w-12 h-0.5 bg-gradient-to-r from-purple-300 to-pink-300"></div>
             <div className="w-4 h-4 bg-pink-300 rounded-full"></div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Enhanced Background Elements */}

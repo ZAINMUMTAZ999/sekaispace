@@ -5,7 +5,7 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import logo from "../assets/logo.svg";
+// import logo from "../assets/logo.svg";
 // import { Button } from "./ui/button";
 // import { AppContext } from "../context/AppNotify";
 // import Logout from "../(auth)/logout/page";
@@ -37,12 +37,12 @@ const Header = () => {
       <div className=" flex container mx-auto items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image
+          {/* <Image
             src={logo}
             alt="SekaiSpace"
             className="h-9 w-9 sm:h-10 sm:w-10 object-contain"
-          />
-          <span className="text-xl font-bold text-blue-700">
+          /> */}
+          <span className="text-lg md:text-xl font-bold text-blue-700">
             <b>Sekai</b>Space
           </span>
         </Link>

@@ -64,7 +64,7 @@ export const ClientHeader = () => {
 
   return (
     <section
-      className="relative -mt-1 py-6 bg-gray-900 overflow-hidden"
+      className="relative -mt-10  py-6 bg-gray-900 overflow-hidden"
       ref={ref}
       //   style={{
       //   clipPath:

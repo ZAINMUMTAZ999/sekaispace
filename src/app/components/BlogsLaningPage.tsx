@@ -76,7 +76,7 @@ const top3Blogs = displayedBlogs
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, ease: 'easeOut' }}
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-extrabold tracking-tight text-gray-900">
+            <h1 className="text-lg sm:text-xl lg:text-2xl  font-extrabold tracking-tight text-gray-900">
               <span className="bg-gradient-to-r from-purple-600 via-blue-500 to-cyan-500 bg-clip-text text-transparent inline-block">
                 Latest Blogs
               </span>
@@ -97,7 +97,7 @@ const top3Blogs = displayedBlogs
                          relative"
             >
               {/* Image Container with potential gradient overlay */}
-              <div className="relative w-full h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-lg">
+              <div className="relative w-full h-32 sm:h-48 sm:h-56 md:h-64 overflow-hidden rounded-t-lg">
                 {blog.imageFile && (
                   <Image
                 src={blog.imageFile}
@@ -114,7 +114,7 @@ const top3Blogs = displayedBlogs
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                  {/* Date overlay as seen in the image - adjust positioning as needed */}
                  {blog.date && (
-                    <div className="absolute bottom-3 left-3 bg-purple-700 text-white text-sm font-semibold px-3 py-1 rounded-md shadow-md">
+                    <div className="absolute bottom-3 left-3 bg-purple-700 text-white text-xs sm:text-base font-semibold px-3 py-1 rounded-md shadow-md">
                       {formatDate(blog.date)}
                     </div>
                  )}
@@ -122,17 +122,17 @@ const top3Blogs = displayedBlogs
 
               <div className="p-4 flex flex-col flex-grow">
                 {/* Title */}
-                <h2 className="text-xl font-semibold text-gray-900 mb-2 leading-tight">
+                <h2 className="text-base sm:text-sm font-semibold text-gray-900 mb-2 leading-tight">
                   {blog.title}
                 </h2>
                 {/* Description Snippet */}
-                <p className="text-gray-600 text-sm mb-4 flex-grow">
+                <p className="text-gray-600 text-xs sm:text-base mb-4 flex-grow">
                   {blog.description.substring(0, 150)}...
                 </p>
                 {/* Read More Link */}
                 <Link
                href="/blogs"
-                  className="text-purple-700 hover:text-purple-900 font-semibold text-sm self-start mt-auto flex items-center"
+                  className="text-purple-700 hover:text-purple-900 font-semibold text-xs sm:text-base self-start mt-auto flex items-center"
                 >
                   Read More
                   <svg className="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

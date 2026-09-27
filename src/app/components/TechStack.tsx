@@ -112,7 +112,7 @@ const TechStack = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="max-w-4xl"
           >
-            <h2 className="text-3xl  mt-20 md:-mt-4 sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight ">
+            <h2 className="text-2xl  mt-20 md:-mt-4 sm:text-3xl lg:text-4xl xl:text-5xl font-bold text-gray-900 leading-tight ">
               <span className="bg-gradient-to-r from-purple-600 via-purple-700 to-blue-600 bg-clip-text text-transparent">
                 We&apos;ve got the tools, the team, and the energy to make it happen.
               </span>
@@ -120,7 +120,7 @@ const TechStack = () => {
           </motion.div>
 
           <motion.p
-            className="text-sm md:text-lg lg:text-xl xl:text-xl  text-gray-600 leading-relaxed font-serif max-w-3xl"
+            className="text-base sm:text-sm md:text-lg lg:text-xl xl:text-xl  text-gray-600 leading-relaxed font-serif max-w-3xl"
             initial={{ y: 20, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.2, duration: 0.8 }}
@@ -156,7 +156,7 @@ const TechStack = () => {
                       {tech.icon}
                     </div>
                     <div className="flex-1 min-w-0">
-                      <h3 className="flex items-center justify-start text-sm md:text-lg font-bold text-gray-800 leading-tight group-hover:text-purple-700 transition-colors duration-300">
+                      <h3 className="flex items-center justify-start text-base sm:text-sm md:text-lg font-bold text-gray-800 leading-tight group-hover:text-purple-700 transition-colors duration-300">
                         {tech.name}
                       </h3>
                     </div>

@@ -161,21 +161,21 @@ const PortfolioCard = ({ project, index }: { project: Project; index: number }) 
                 )}
             </div>
             <div className="flex justify-between items-center text-gray-600">
-                <h3 className="text-lg font-semibold text-gray-800">{project.title}</h3>
-                <span className="text-sm">{project.year}</span>
+                <h3 className="text-xs sm:text-sm md:text-lg font-semibold text-gray-800">{project.title}</h3>
+                <span className="text-xs sm:text-sm">{project.year}</span>
             </div>
         </motion.div>
     );
 };
 
 const PortfolioSection = () => (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-white ">
         <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-                <span className="text-sm font-semibold text-blue-600 tracking-widest uppercase">PORTFOLIO</span>
-                <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mt-2">Selected Works</h2>
+            <div className="text-center ">
+                <span className="text-xs     sm:text-sm font-semibold text-blue-600 tracking-widest uppercase">PORTFOLIO</span>
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold tracking-wide ">Selected Works</h2>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 mt-8 gap-y-12">
                 {portfolioProjects.map((project, index) => (
                     <PortfolioCard key={project.id} project={project} index={index} />
                 ))}
@@ -187,7 +187,7 @@ const PortfolioSection = () => (
 
 const Portfolio = () => {
     return (
-        <div className="bg-gray-50 min-h-screen font-sans">
+        <div className="bg-gray-50  font-sans">
             <main>
                 <PortfolioSection />
                

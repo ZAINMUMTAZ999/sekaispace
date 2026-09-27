@@ -70,7 +70,10 @@ const YearsExperience = () => {
 
                 {/* Grid for Statistics - now 2 columns on mobile and 4 on larger screens for better layout */}
                 <motion.div
-                    className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 max-w-6xl mx-auto"
+                    className="grid grid-cols-2 lg:grid-cols-4 gap-y-12 gap-x-6 max-w-6xl mx-auto
+                    
+                    text-base sm:text-xl lg:text-2xl  font-extrabold tracking-wide
+                    "
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
@@ -81,7 +84,7 @@ const YearsExperience = () => {
                         //  variants={itemVariants}
                          >
                             <AnimatedCounter to={stat.value} styleType={stat.styleType} suffix={stat.suffix} />
-                            <p className="text-base text-gray-500 mt-2 max-w-[180px] mx-auto">{stat.label}</p>
+                            <p className="text-base sm:text-xl lg:text-2xl mx-auto">{stat.label}</p>
                         </motion.div>
                     ))}
                 </motion.div>
